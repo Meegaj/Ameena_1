@@ -3,17 +3,15 @@ Ameena Gaji (Craft and Hawkins Department of Petroleum Engineering), agaji1@lsu.
 
 The script begins by importing the necessary library, numpy, which is fundamental for handling numerical operations involving matrices.
 
-# Function: Cofactor
+# Cofactor Function
 
-Cofactor is specifically tailored for 5x5 matrices. It takes three inputs: a 5x5 matrix and the row and column indices of the element whose cofactor is sought.
+Cofactor is specifically tailored for 5x5 matrices. It takes three inputs: a 5x5 matrix and the row and column indices of the element whose cofactor is to be calculated.
 
 The function first verifies the dimensions of the input matrix. If the matrix is not 5x5, it raises a ValueError, ensuring the function operates correctly with the intended input size.
 
 It then creates a sub-matrix by eliminating the specified row and column from the original matrix. This step is crucial as the cofactor is calculated on the smaller matrix that remains after removing the specified row and column.
 
-The determinant of the resulting 4x4 sub-matrix is computed.
-
-The function calculates the cofactor by applying the formula (-1)^(row + column) * determinant, considering the sign change that occurs in a matrix's cofactor expansion.
+The determinant of the resulting 4x4 sub-matrix is computed and the cofactor is calculated by applying the formula (-1)^(row + column) * determinant, considering the sign change that occurs in a matrix's cofactor expansion.
 
 # Sample Execution:
 
